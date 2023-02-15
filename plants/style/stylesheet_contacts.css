@@ -1,0 +1,163 @@
+.contacts{
+    position: relative;
+    padding: 47px 109px 0;
+    
+    display: flex;
+    justify-content: space-between;
+    background: #EDF2EC;
+    height: 504px;
+}
+.contacts h2 {
+    padding-top: 14px;
+    padding-left: 513px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+
+    color: #499A18;
+}
+
+.select_block{
+    position: absolute;
+    padding-top: 101px ;
+    right: 108px;
+
+}
+.select_city{
+    height: 50px;
+    width: 450px;
+    padding-left: 20px;
+   
+    outline: none;
+    appearance: none;
+    background-image: url(../assets/img/prices/accordion_btn.png);
+    background-position: right 7.7% top 50%;
+    background-repeat: no-repeat;
+    background-color: #D6E7D2;
+    border: none ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    
+}
+.select_city:hover{
+    background-color: #C1E698;
+    outline: none;
+}
+
+.select_city:focus{
+    background-color: #C1E698;
+    outline: none;
+}
+.option.disabled {
+    color: #717171;
+    border-bottom: #717171;
+}
+.select_city option {
+
+    background-color: #D6E7D2;   
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #499A18;
+}
+.option_city{
+    display: none;
+}
+option {
+    padding: 15px 0 15px;
+    min-height: 10.2em;
+}
+.contacts_img {
+    position:absolute;
+    left: 110px;
+    bottom: -4px;
+
+}
+
+@media (min-width: 768px) and (max-width: 1439px)    {
+    .contacts{
+        padding: 40px 0 497px;
+        flex-flow: column;
+        height: unset;
+    }
+    .contacts h2 {
+        text-align: center;
+        padding-left: unset;
+        padding-top: 0px;
+    }
+    
+    .select_block{
+        position: relative;
+        padding-top: 100px ;
+        text-align: center;
+        right: unset;
+    }
+    .select_city{
+
+    }
+
+    .contacts_img img {
+        width: calc(26vw);
+        height: calc(32.5vw);
+    }
+    .contacts_img {
+        left:  calc(50vw);
+        transform: translateX(-45%);
+        bottom: -4px;
+        top:unset
+    }
+}
+@media (min-width: 320px) and (max-width: 767px)    {
+    .contacts{
+        padding: 25px 0 256px;
+        flex-flow: column;
+        height: unset;
+    }
+    .contacts h2 {
+      
+        padding-left: unset;
+        padding-top: 0px;
+        font-size: 25px;
+        text-align: center;
+        line-height: 33px;
+    }
+    
+    .select_block{
+        position: relative;
+        padding-top: 80px ;
+        text-align: center;
+        right: unset;
+    
+    }
+    .select_city{
+        height: 50px;
+        width: 300px;
+        padding-left: 20px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .contacts_img img {
+        width: calc(26vw);
+        height: calc(32.5vw);
+    }
+    .contacts_img {
+        left:  calc(50vw);
+        transform: translateX(-50%);
+        bottom: -4px;
+        top:unset
+    }
+}
