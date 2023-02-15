@@ -1,0 +1,324 @@
+.price{
+    padding: 39px 109px 128px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.leftblok{
+    
+}
+.leftblok h2{
+    padding-bottom: 57px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #000000;
+}
+
+.price_list{
+   position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 282px;
+    width: 332px;
+    border-radius: 20px;
+    border: 1px solid #E3E1D5;
+  
+}
+.price_card{
+    padding-top: 10px;
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    transition-property: height;
+    transition-duration: 0.1s;
+    border-radius: 20px;
+    background: #EDF2EC;
+   
+}
+.price_card_active{
+    padding-top: 16px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 154px;
+    border-radius: 20px;
+    background: #D6E7D2;
+
+   
+}
+
+.price_card_text{
+    width: 160px;
+    padding: 0px 54px 12px 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #000000;
+}
+.price_card_arrow_basics,
+.price_card_arrow_standard,
+.price_card_arrow_pro{
+    position: absolute;
+    top: 20px;
+    left: 194px;
+    width: 16px;
+    height: 16px;
+    background: #D9D9D9;
+    border-radius: 8px;
+    background-image: url(../assets/img/prices/arrow.png);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 6px;
+    transition-property: transform, background;
+    transition-duration: 0.7s;
+}
+.price_card_arrow_active{
+    transform: rotate(180deg);
+  
+    background: #AEA1A1;
+    background-image: url(../assets/img/prices/arrow_white.png);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 6px;
+}
+.price_card_checked_basics, 
+.price_card_checked_standard,
+.price_card_checked_pro{
+    width: 169px;
+    padding: 0 54px  0 40px;
+    
+}
+.price_card_line{
+    width: 164px;
+    border-bottom: 0.5px solid #AEA1A1 ;
+}
+.price_card_info{
+    padding: 6px 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+}
+.price_card_price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    padding-bottom: 12px;
+}
+.active_card_botton{
+   
+    width: 86px;
+    height: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 0px;
+}
+.hidden{
+    display: none;
+}
+.rigthblock {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    /* justify-content: space-around; */
+    align-items: flex-end;
+    
+
+}
+.rigthblock h2 {
+    padding-bottom: 38px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+
+
+text-align: right;
+
+color: #000000;
+
+}
+.button_css_prise{
+    width: 162px;
+    height: 50px;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    text-align: center;
+    color: #E06733;
+    box-sizing: border-box;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+}
+.rigthblock_img{
+    position:absolute;
+    right: -12px;
+    bottom: -25px;
+   
+}
+.button_css_prise:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #E06733;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1439px)    {
+    .price{
+        padding: 39px 50px 160px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .leftblok{
+ 
+    }
+    .leftblok h2{
+        padding-left: 15px;
+        font-size: 35px;
+        line-height: 42px;
+    }
+    
+ 
+    .rigthblock {
+        padding-top: 100px;
+    }
+    .rigthblock h2 {
+        padding-bottom: 23px;
+        font-size: 25px;
+        line-height: 35px;  
+    }
+    .button_css_prise{
+       
+    }
+    .rigthblock_img{
+        right: -12px;
+        bottom: -83px;
+       
+    }
+
+
+}
+@media (min-width: 32px) and (max-width: 767px)    {
+    .price{
+        padding: 25px 0px 40px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .leftblok{
+
+    }
+    .leftblok h2{
+        text-align: center;
+        font-size: 25px;
+        line-height: 30px;
+        padding-bottom: 36px;
+    }
+    
+    .price_list{
+       margin: 0 auto;
+       width: 224px;
+       height: 232px;
+       justify-content: flex-start;
+       padding-top: 13px;
+    }
+    .price_card{
+        width: 180px;
+        
+        margin-top: 14px;
+        background-position-x: 125px;
+        background-position-y: 20px;
+    }
+    .price_card_text{
+
+        padding: 16px 0px 16px 30px;
+        font-size: 15px;
+        line-height: 20px;
+        
+    }
+    .rigthblock {
+        padding-top: 8px;
+        align-items: center;
+    }
+    .rigthblock h2 {
+        padding-bottom: 21px;
+        font-size: 20px;
+        line-height: 35px;  
+        text-align: center;
+
+    }
+    .button_css_prise{
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 20px;
+
+    }   
+    .rigthblock_img{
+       display: none;
+       
+    }
+    .price_card_arrow_basics,
+    .price_card_arrow_standard,
+    .price_card_arrow_pro{
+        left: 134px;
+    }
+    .price_card_active{
+        position: absolute;
+    }
+    .price_card_checked{
+        width: 159px;
+        padding: 0 7px;
+        text-align: center;
+
+    }
+    .price_card_line{
+        margin: 0 auto;
+        width: 130px;
+    }
+    .price_card {
+        padding-top: 2px;
+    }
+    .price_card_active{
+        padding-top: 2px;
+    }
+    .price_card_price{
+        padding-bottom: 6px;
+    }
+    .price_card_text {
+        padding: 16px 0px 10px 30px;
+     
+    }
+
+}

@@ -1,0 +1,80 @@
+html {scroll-behavior: smooth;}
+
+li {
+    list-style: none;
+}
+
+a {
+    scroll-behavior: smooth;
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+body, 
+ul, 
+h1, 
+h2, 
+h3, 
+h5,
+p {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --font-family-header: 'Inika';
+    --font-style-header: normal;
+    --font-weight-header: 400;
+    --font-size-header: 16px;
+    --line-height-header: 21px;
+    
+    --line-height-nav: 50px;
+
+ 
+
+}
+
+
+.body {
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+/*                     Burger Menu                       */
+.body_scroll {
+           
+    overflow: hidden;
+    height: 100vh;
+     
+    /* background: black;
+    position: relative;
+    z-index: 1; */
+}
+.menuListOn {
+    position: absolute;
+    flex-direction: column;
+    right: 0px;
+    top: 250px;
+    z-index: 5;
+    height: 327px;
+    justify-content: space-around;
+    padding: 0 38px;
+    animation-duration: 3s;
+    animation-name: opacity;
+   
+    
+}
+@media (min-width: 381px) and (max-width: 768px)    {
+    .body {
+        max-width: 768px;
+
+    }
+}
+@media (min-width: 320px) and (max-width: 380px)    {
+    .body {
+        max-width: 380px;
+
+    }
+}

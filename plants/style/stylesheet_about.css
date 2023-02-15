@@ -1,0 +1,120 @@
+.about {
+    
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+   
+    background: #FFFFFF;
+}
+.about__block{
+    height:349px;
+    width: max-contentq;
+    flex-grow: 1;
+    padding: 0 80px 0 109px;
+    flex-basis: 50%;
+    
+    text-align: left;
+}
+.about_img{
+    flex-grow: 1;
+    flex-basis: 50%;
+    padding: 93px 38px 89px 0 ;
+}
+.about__block_texth2{
+    padding-bottom: 40px;
+        
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+
+    color: #499A18;
+}
+.about__block_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px; 
+    color: #636060;
+
+}
+
+@media (min-width: 768px) and (max-width: 1439px)    {
+    .about {
+    
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+       
+        background: #FFFFFF;
+    }
+    .about__block{
+        
+        flex-grow: 1;
+        padding: 40px 50px 0 50px;
+        flex-basis: 50%;
+        text-align: left;
+    }
+    .about_img{
+        flex-grow: 1;
+        flex-basis: 50%;
+        padding: 67px 50px 90px 50px ;
+    }
+    .about_img img{
+        height: 258px;
+        width: 250px;      
+    }
+    .about__block_texth2{
+        padding-bottom: 47px;
+        text-align: center;
+        
+        font-size: 35px;
+        line-height: 46px;
+    
+        color: #499A18;
+    }
+    .about__block_text{
+        letter-spacing:  -0.1px;
+    }
+
+}
+@media (min-width:320px) and (max-width: 767px)    {
+    .about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+       
+    }
+    .about__block{
+        
+        padding: 30px 25px 0px;
+
+    }
+    .about_img{
+
+        padding: 5px 0px 28px;
+    }
+    .about_img img{
+        height: 147px;
+        width: 150px;      
+    }
+    .about__block_texth2{
+        padding-bottom: 11px;
+        text-align: center;
+       
+        font-size: 25px;
+        line-height: 33px;
+    
+        color: #499A18;
+    }
+    .about__block_text{
+        font-size: 15px;
+        line-height: 25px; 
+        letter-spacing:  0.0px;
+    }
+}
